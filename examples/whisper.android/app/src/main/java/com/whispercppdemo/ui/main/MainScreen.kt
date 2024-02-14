@@ -20,8 +20,8 @@ fun MainScreen(viewModel: MainScreenViewModel) {
         canTranscribe = viewModel.canTranscribe,
         isRecording = viewModel.isRecording,
         messageLog = viewModel.dataLog,
-        onBenchmarkTapped = viewModel::benchmark,
-        onTranscribeSampleTapped = viewModel::transcribeSample,
+        //onBenchmarkTapped = viewModel::benchmark,
+        //onTranscribeSampleTapped = viewModel::transcribeSample,
         onRecordTapped = viewModel::toggleRecord
     )
 }
@@ -32,8 +32,8 @@ private fun MainScreen(
     canTranscribe: Boolean,
     isRecording: Boolean,
     messageLog: String,
-    onBenchmarkTapped: () -> Unit,
-    onTranscribeSampleTapped: () -> Unit,
+    //onBenchmarkTapped: () -> Unit,
+    //onTranscribeSampleTapped: () -> Unit,
     onRecordTapped: () -> Unit
 ) {
     Scaffold(
@@ -49,10 +49,10 @@ private fun MainScreen(
                 .padding(16.dp)
         ) {
             Column(verticalArrangement = Arrangement.SpaceBetween) {
-                Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
-                    BenchmarkButton(enabled = canTranscribe, onClick = onBenchmarkTapped)
-                    TranscribeSampleButton(enabled = canTranscribe, onClick = onTranscribeSampleTapped)
-                }
+                //Row(horizontalArrangement = Arrangement.SpaceBetween, modifier = Modifier.fillMaxWidth()) {
+                    //BenchmarkButton(enabled = canTranscribe, onClick = onBenchmarkTapped)
+                    //TranscribeSampleButton(enabled = canTranscribe, onClick = onTranscribeSampleTapped)
+                //}
                 RecordButton(
                     enabled = canTranscribe,
                     isRecording = isRecording,
@@ -71,19 +71,19 @@ private fun MessageLog(log: String) {
     }
 }
 
-@Composable
-private fun BenchmarkButton(enabled: Boolean, onClick: () -> Unit) {
-    Button(onClick = onClick, enabled = enabled) {
-        Text("Benchmark")
-    }
-}
+//@Composable
+//private fun BenchmarkButton(enabled: Boolean, onClick: () -> Unit) {
+//    Button(onClick = onClick, enabled = enabled) {
+//        Text("Benchmark")
+//    }
+//}
 
-@Composable
-private fun TranscribeSampleButton(enabled: Boolean, onClick: () -> Unit) {
-    Button(onClick = onClick, enabled = enabled) {
-        Text("Transcribe sample")
-    }
-}
+//@Composable
+//private fun TranscribeSampleButton(enabled: Boolean, onClick: () -> Unit) {
+//    Button(onClick = onClick, enabled = enabled) {
+//        Text("Transcribe sample")
+//    }
+//}
 
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
@@ -105,9 +105,9 @@ private fun RecordButton(enabled: Boolean, isRecording: Boolean, onClick: () -> 
      }, enabled = enabled) {
         Text(
             if (isRecording) {
-                "Stop recording"
+                "Stopio recordio"
             } else {
-                "Start recording"
+                "Dechrau recordio"
             }
         )
     }
