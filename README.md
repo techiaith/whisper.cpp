@@ -1,3 +1,32 @@
+# Adnabod Lleferydd All-lein Cymraeg gyda whisper.cpp
+
+Addaswyd y cod yma i wireddu demo o adnabod lleferydd Cymraeg yn rhedeg all-lein ar ffôn Android. 
+
+Dyma fideo yn ei ddangos yn gweithio er bod y Modd Awyren ymlaen...
+
+[![Adnabod lleferydd Cymraeg all-lein ar ddyfais Android](https://img.youtube.com/vi/E-zBhkP783Y/0.jpg)](https://www.youtube.com/watch?v=E-zBhkP783Y)
+
+Ein model [whisper-tiny-ft-cy-en](https://huggingface.co/techiaith/whisper-tiny-ft-cy-en), sef mireiniad o fodel whisper-tiny gan OpenAI gyda 
+[data Banc Trawsgrifiadau Bangor](https://huggingface.co/datasets/techiaith/banc-trawsgrifiadau-bangor), sydd yn sail i'r demo. 
+
+Gweler hefyd https://github.com/techiaith/whisper.cpp/blob/cymraeg_v1/examples/whisper.android/app/src/main/assets/models/ggml-model.bin am fersiwn fformat whisper.cpp o'r model. 
+
+Mae'r cod ar gyfer llwytho a rhedeg yr ap eich hunain ar gael o https://github.com/techiaith/whisper.cpp/tree/cymraeg_v1/examples/whisper.android
+
+# Offline Welsh Speech Recognition with whisper.cpp
+
+This code was modified to implement a demo of Welsh speech recognition running off-line on an Android phone.
+
+Our model [whisper-tiny-ft-cy-en](https://huggingface.co/techiaith/whisper-tiny-ft-cy-en), which is a fine-tuning of OpenAI's whisper-tiny model with
+[Banc Trawsgrifiadau Bangor data](https://huggingface.co/datasets/techiaith/banc-trawsgrifiaud-bangor), is the basis of the demo.
+
+See also https://github.com/techiaith/whisper.cpp/blob/cymraeg_v1/examples/whisper.android/app/src/main/assets/models/ggml-model.bin for a whisper.cpp format version of the model.
+
+The code for loading and running the app yourself is available from https://github.com/techiaith/whisper.cpp/tree/cymraeg_v1/examples/whisper.android
+
+
+---
+
 # whisper.cpp
 
 ![whisper.cpp](https://user-images.githubusercontent.com/1991296/235238348-05d0f6a4-da44-4900-a1de-d0707e75b763.jpeg)
